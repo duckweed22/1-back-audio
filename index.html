@@ -88,7 +88,7 @@
 </style>
 
 <body>
-    <h1 class="title">2-back-audio</h1>
+    <h1 class="title">1-back-audio</h1>
     <div class="button">
         <button class="start">重新开始</button>
         <button class="end">结束</button>
@@ -166,7 +166,7 @@
             audioplay.setAttribute('src', number_sound);
 
             console.log(audioplay.src)
-            if (random_number == random_list[flag - 2]) {
+            if (random_number == random_list[flag - 1]) {
                 ReactTime[flag] = 1
                 document.onclick = function (e) {
                     var evt = e || window.event;
@@ -180,7 +180,7 @@
                 }
 
             }
-            if (random_number != random_list[flag - 2]) {
+            if (random_number != random_list[flag - 1]) {
                 document.onclick = function (e) {
                     var evt = e || window.event;
                     var tar = evt.target || evt.srcElement;
