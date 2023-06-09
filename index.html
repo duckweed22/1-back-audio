@@ -224,28 +224,22 @@
     function setGeedBack(result){
         ReactTime.push(result)
         setStatisticResult()
-//         feedback.style.background = randomRgbColor()
         switch (result) {
             case 1:
-                feedback.style.background = randomRgbColor()
                 feedback.innerHTML = '漏点了！'
                 console.log("漏点了！")
                 break;
             case -1:
-                feedback.style.background = randomRgbColor()
                 feedback.innerHTML = '😭抱歉，点击错了！'
                 console.log("点击错了")
                 break;
             case 0:
-                feedback.style.background = randomRgbColor()
                 feedback.innerHTML = ' '
                 break;
             case 999:
-                feedback.style.background = randomRgbColor()
                 feedback.innerHTML = ' '
                 break;
             default:
-                feedback.style.background = randomRgbColor()
                 feedback.innerHTML = '🎉恭喜，点击对了！'
                 console.log("点击对了", end_time - start_time)
                 break;
