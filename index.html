@@ -97,7 +97,7 @@
         <div class="feedback"></div>
         <div class="game_area">点击屏幕开始
 
-            <audio id="mp3audio" controls autoplay>
+            <audio id="mp3audio" controls>
                 <source src="wave/start.wav" type="audio/mpeg" id="beijingyine">
             </audio>
 
@@ -223,6 +223,7 @@
 
         var number_sound = "wave/" + random_number + ".mp3"
         audioplay.setAttribute('src', number_sound);
+        audioplay.play()
         console.log(audioplay.src)
 
     }
